@@ -1,11 +1,11 @@
-import 'package:chat/core/widget/defolt_button.dart';
 import 'package:chat/features/log_in_feature/presentation/views/widgets/defolt_text_button.dart';
-import 'package:chat/core/widget/defolt_text_field.dart';
-import 'package:chat/features/log_in_feature/regester_feature/presentation/views/regester_view.dart';
 import 'package:flutter/material.dart';
 
-class LogInBoody extends StatelessWidget {
-  const LogInBoody({super.key});
+import '../../../../../../core/widget/defolt_button.dart';
+import '../../../../../../core/widget/defolt_text_field.dart';
+
+class RegesterScreenBody extends StatelessWidget {
+  const RegesterScreenBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +37,7 @@ class LogInBoody extends StatelessWidget {
             const Row(
               children: [
                 Text(
-                  'logIn',
+                  'Regester',
                   style: TextStyle(
                     fontSize: 23,
                     fontWeight: FontWeight.normal,
@@ -67,20 +67,17 @@ class LogInBoody extends StatelessWidget {
               height: 20,
             ),
             DefoltButton(
-              text: 'logIn',
+              text: 'Regester',
               onpresd: () {},
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Text('Dont have an account?'),
+                const Text('already have an account ?'),
                 DefoltTextButton(
-                  text: 'Regster Now',
+                  text: 'Regester',
                   onpresd: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const RegisterScreen()));
+                    Navigator.pop(context);
                   },
                 )
               ],

@@ -1,8 +1,9 @@
 import 'package:chat/core/widget/defolt_button.dart';
 import 'package:chat/features/log_in_feature/presentation/views/widgets/defolt_text_button.dart';
 import 'package:chat/core/widget/defolt_text_field.dart';
-import 'package:chat/features/log_in_feature/regester_feature/presentation/views/regester_view.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../regester_feature/presentation/views/regester_view.dart';
 
 class LogInBoody extends StatelessWidget {
   const LogInBoody({super.key});
